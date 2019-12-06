@@ -23,9 +23,12 @@ body{
 }
 
 table{
-	width:60%;
+	width:80%;
 	background-color:#1D1E18;
 	display:block;
+	padding:10px;
+	border-color:white;
+	border-style:none;
 }
 /*
 center {
