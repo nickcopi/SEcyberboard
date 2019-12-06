@@ -1,0 +1,11 @@
+{
+	"endpoint":"http://scoreboard.uscyberpatriot.org/team.php?team=",
+	"teams":[
+		{
+			"name":"Epic Hackers",
+			"id": "12-4921"
+		}
+
+
+	]
+}
