@@ -12,6 +12,7 @@ const updateTable = ()=>{
 }
 
 const drawScores = teams=>{
+	teams.sort(sortEntries);
 	console.log(teams);
 	if(teams[0]) drawHeader(teams[0]);
 	teams.forEach(team=>{
@@ -71,6 +72,11 @@ const getImageData = image =>{
 		<td>${image.penalties}</td>
 		<td>${image.score}</td>
 	`
+}
+
+
+const sortEntries = (a,b)=>{
+	return a.totalScore - b.totalScore
 }
 
 const getScores = callback=>{
