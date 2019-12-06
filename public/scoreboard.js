@@ -38,13 +38,21 @@ const drawHeader = team=>{
 }
 
 const drawTeam = team=>{
-	table.innerHTML += `
+console.log(`
 		<tr>
 			<td>${team.name}</td>
 			<td>${team.division}</td>
 			<td>${team.spentTime}</td>
 			<td>${team.totalScore}</td>
 			${team.images.map(image=>getImageData(image))}
+		</tr>`)
+	table.innerHTML += `
+		<tr>
+			<td>${team.name}</td>
+			<td>${team.division}</td>
+			<td>${team.spentTime}</td>
+			<td>${team.totalScore}</td>
+			${team.images.map(image=>getImageData(image)).join('')}
 		</tr>
 	`;
 	//const tr = document.createElement('tr');
