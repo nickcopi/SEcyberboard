@@ -4,6 +4,9 @@ const init = ()=>{
 	table = document.getElementById('table');
 	//document.body.style.backgroundColor = 'black';
 	updateTable();
+	setInterval(()=>{
+		updateTable();
+	},1000 * 60);
 }
 
 const updateTable = ()=>{
@@ -13,7 +16,7 @@ const updateTable = ()=>{
 
 const drawScores = teams=>{
 	teams.sort(sortEntries);
-	console.log(teams);
+	//console.log(teams);
 	if(teams[0]) drawHeader(teams[0]);
 	teams.forEach(team=>{
 		drawTeam(team);
@@ -40,14 +43,14 @@ const drawHeader = team=>{
 }
 
 const drawTeam = team=>{
-console.log(`
+/*console.log(`
 		<tr>
 			<td>${team.name}</td>
 			<td>${team.division}</td>
 			<td>${team.spentTime}</td>
 			<td>${team.totalScore}</td>
 			${team.images.map(image=>getImageData(image))}
-		</tr>`)
+		</tr>`)*/
 	table.innerHTML += `
 		<tr>
 			<td>${team.name}</td>
@@ -76,7 +79,7 @@ const getImageData = image =>{
 
 
 const sortEntries = (a,b)=>{
-	return a.totalScore - b.totalScore
+	return b.totalScore - a.totalScore
 }
 
 const getScores = callback=>{

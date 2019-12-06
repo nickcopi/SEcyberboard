@@ -8,7 +8,7 @@ const state = {
 const updateState = async ()=>{
 	console.log('starting team update');
 	state.teams = await Promise.all(config.teams.map(async (team,i)=>{
-		await (new Promise((resolve,reject)=>{
+		return await (new Promise((resolve,reject)=>{
 			setTimeout(async ()=>{
 				const options = {
 					url:config.endpoint + team.id,
@@ -38,7 +38,7 @@ const updateState = async ()=>{
 					return{
 						name:image[0].split('_')[0],
 						time:image[1],
-						finds:image[2] + '/' + image[3],
+						finds:image[2] + '/' + (Number(image[2]) + Number(image[3])),
 						penalties:Number(image[4]),
 						score:Number(image[5])
 					}
@@ -63,6 +63,6 @@ updateState();
 
 setInterval(()=>{
 	updateState();
-}, 1000 * 30)
+}, 1000 * 60)
 
 module.exports = state;
