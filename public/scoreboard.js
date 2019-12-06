@@ -2,6 +2,7 @@
 let table;
 const init = ()=>{
 	table = document.getElementById('table');
+	//document.body.style.backgroundColor = 'black';
 	updateTable();
 }
 
