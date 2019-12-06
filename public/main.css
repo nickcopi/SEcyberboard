@@ -11,8 +11,23 @@ input{
 }
 body{
 	background-color:black;
+	color:white;
+	font-family:Courier New;
 
 }
+#root{
+}
+
+.headerImage{
+	width:20%;
+}
+
+table{
+	width:60%;
+	background-color:#1D1E18;
+	display:block;
+}
+/*
 center {
   margin: 0;
   position: absolute;
@@ -21,6 +36,7 @@ center {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+*/
 canvas{
 	position:absolute;
 	z-index:-1;
