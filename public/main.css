@@ -1,0 +1,41 @@
+input{
+	width:100%;
+	border-radius:30px;
+	text-align:center;
+	font-size:40px;
+	outline-width: 0;
+	color:white;
+	background-color:#4D4E48;
+	border-color:#1D1E18;
+
+}
+body{
+	background-color:black;
+
+}
+center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+canvas{
+	position:absolute;
+	z-index:-1;
+	top:0px;
+	left:0px;
+
+}
+.light{
+	color:#C43D3E;
+}
+.dark{
+	color:#9D2C2B;
+}
+span{
+	font-family:arial;
+	font-size:70px;
+}
+
