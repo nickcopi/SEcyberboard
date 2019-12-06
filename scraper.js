@@ -6,6 +6,7 @@ const state = {
 };
 
 const updateState = async ()=>{
+	console.log('starting team update');
 	state.teams = await Promise.all(config.teams.map(async team=>{
 		const result = (await request(config.endpoint + team.id)).split('\r\n');
 		//console.log(result);
@@ -15,7 +16,7 @@ const updateState = async ()=>{
 		team.division = teamStats[3];
 		team.spentTime = teamStats[5];
 		team.totalScore = teamStats[7];
-		console.log(team);
+		//console.log(team);
 		const images = [];
 		//console.log(result.reverse().find(line=>line.includes('<table')));
 		const headerLine2 = result.reverse().find(line=>line.includes('<table'));
@@ -37,6 +38,7 @@ const updateState = async ()=>{
 		});
 		return team;
 	}));
+	console.log('finished team update');
 }
 
 
