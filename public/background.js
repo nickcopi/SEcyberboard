@@ -47,7 +47,7 @@ let script = ()=>{
 		}
 	}
 	window.addEventListener('load',()=>{
-		init();
+		//init();
 	});
 }
 script();

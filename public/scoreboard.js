@@ -53,7 +53,7 @@ const drawTeam = team=>{
 		</tr>`)*/
 	table.innerHTML += `
 		<tr>
-			<td>${team.name}</td>
+			<td><a target="_blank" href="${team.drilldownUrl}">${team.name}</a></td>
 			<td>${team.division}</td>
 			<td>${team.spentTime}</td>
 			<td>${team.totalScore}</td>

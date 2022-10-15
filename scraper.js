@@ -9,6 +9,7 @@ const updateState = async ()=>{
 	console.log('starting team update');
 	state.teams = await Promise.all(config.teams.map(async (team,i)=>{
 		return await (new Promise((resolve,reject)=>{
+			//if(team.disabled) return resolve(team);
 			setTimeout(async ()=>{
 				const options = {
 					url:config.endpoint + team.id,
@@ -34,6 +35,7 @@ const updateState = async ()=>{
 					images.push(cleanupLine(result[index]));
 					index++;
 				}
+				team.drilldownUrl = config.endpoint+team.id;
 				team.images = images.map(image=>{
 					return{
 						name:image[0].split('_')[0],
@@ -44,6 +46,7 @@ const updateState = async ()=>{
 					}
 
 				});
+				if(team.images.length > 5) team.images = [];
 				resolve(team);
 			},i*1000);
 		}));

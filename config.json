@@ -2,70 +2,24 @@
 	"endpoint":"http://scoreboard.uscyberpatriot.org/team.php?team=",
 	"teams":[
 		{
-			"name":"Epic Hackers",
-			"id": "12-4921"
+			"name":"Mad hatters",
+			"id": "15-0188"
 		},
 		{
-			"name":"1337 FEET",
-			"id": "12-2898"
+			"name":"Cisco Inferno",
+			"id": "15-0205"
 		},
 		{
-			"name":"CYBER PILLIGAERS",
-			"id": "12-0188"
+			"name":"Killer Rabbits",
+			"id": "15-0207"
 		},
 		{
-			"name":"HACKER 3x7r3m3",
-			"id": "12-2898"
+			"name":"Missing Dragons",
+			"id": "15-0208"
 		},
 		{
-			"name":"Epic Hackers",
-			"id": "12-4921"
-		},
-		{
-			"name":"1337 FEET",
-			"id": "12-2898"
-		},
-		{
-			"name":"CYBER PILLIGAERS",
-			"id": "12-0188"
-		},
-		{
-			"name":"HACKER 3x7r3m3",
-			"id": "12-2898"
-		},
-		{
-			"name":"Epic Hackers",
-			"id": "12-4921"
-		},
-		{
-			"name":"1337 FEET",
-			"id": "12-2898"
-		},
-		{
-			"name":"CYBER PILLIGAERS",
-			"id": "12-0188"
-		},
-		{
-			"name":"HACKER 3x7r3m3",
-			"id": "12-2898"
-		},
-		{
-			"name":"Epic Hackers",
-			"id": "12-4921"
-		},
-		{
-			"name":"1337 FEET",
-			"id": "12-2898"
-		},
-		{
-			"name":"CYBER PILLIGAERS",
-			"id": "12-0188"
-		},
-		{
-			"name":"HACKER 3x7r3m3",
-			"id": "12-2898"
+			"name":"Alpha Centurions",
+			"id": "15-0209"
 		}
-
-
 	]
 }
